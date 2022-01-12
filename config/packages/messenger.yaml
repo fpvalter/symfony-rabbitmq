@@ -17,7 +17,7 @@ framework:
                         type: direct
                         default_publish_key: message_invoice
                     queues:
-                        queue_orders:
+                        queue_invoice:
                             binding_keys: [message_invoice]
 
             failed: 'doctrine://default?queue_name=failed'
